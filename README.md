@@ -13,7 +13,9 @@ This ain't any ordinary Food Ordering App. I have a lot in mind. I'll post more 
 <div align = "center">
 
   ![image](https://raw.githubusercontent.com/sahilsarin390/FOODsta/main/UI/Splash%20Screen.png)
+  </br>
   ![image](https://raw.githubusercontent.com/sahilsarin390/FOODsta/main/UI/Login%20Page.png)
+  </br>
   ![image](https://raw.githubusercontent.com/sahilsarin390/FOODsta/main/UI/Sign%20Up%20Page.png)
   
 </div>
