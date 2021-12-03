@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOODsta</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="resources/logo.ico">
+</head>
+<body>
+    <section class="main">
+        <header>
+            <a href="#" class="logo"><img src="resources/logo.png"></a>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Support</a></li>
+            </ul>
+            <a href="#" class="app"><ion-icon name="arrow-down-outline"></ion-icon>Download App</a>
+        </header>
+
+        <div class="contentBx">
+            <div class="text">
+                <h2>FOODsta</h2>
+                <br>An Android/IOS Food ordering app based on latest UI trends. This ain't any ordinary Food Ordering App. I have a lot in
+                mind. I'll post more info soon.</p>
+                <h4>Download the app   (Coming Soon!)</h4>
+                <a href="https://www.apple.com/in/app-store/" class="btn"><ion-icon name="logo-apple-appstore"></ion-icon>App Store</a>
+                <a href="https://play.google.com/" class="btn"><ion-icon name="logo-google-playstore"></ion-icon>Play Store</a>
+            </div>
+            
+            <div class="dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+
+            <div class="imgBx">
+                <img src="resources/splashscreen-removebg-preview.png" class="slides active">
+                <img src="resources/loginpage-removebg-preview.png" class="slides">
+                <img src="resources/signuppage-removebg-preview.png" class="slides">
+            </div>
+        </div>
+        
+        <ul class="sci">
+            <li><a href="https://www.facebook.com/" target = '_blank'><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li><a href="https://twitter.com/" target = '_blank'><ion-icon name="logo-twitter"></ion-icon></a></li>
+            <li><a href="https://www.instagram.com/" target = '_blank'><ion-icon name="logo-instagram"></ion-icon></ion-icon></a></li>
+        </ul>
+
+    </section>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script>
+        const slides = document.querySelectorAll('.slides');
+        const dots = document.querySelectorAll('.dot');
+
+        function SetActive(i){
+            for(slide of slides)
+            slide.classList.remove('active');
+            slides[i].classList.add('active');
+
+            for(dot of dots)
+            dot.classList.remove('active');
+            dots[i].classList.add('active');
+        }
+
+        for (let j = 0; j<dots.length; j++){
+            dots[j].addEventListener('click', function(){
+                SetActive(j);
+            })
+        }
+    </script>
+</body>
+</html>
